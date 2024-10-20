@@ -306,10 +306,7 @@ nav ul a:visited {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-card-item:focus .team-card-item-list-social-link {
-    background-color: #404bbf;
-}
-
+.team-card-item:focus .team-card-item-list-social-link,
 .team-card-item:hover .team-card-item-list-social-link {
     background-color: #404bbf;
 }
@@ -359,6 +356,11 @@ nav ul a:visited {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.team-card-item-list-social-link:focus,
+.team-card-item-list-social-link:hover {
+    background-color: #404bbf;
+}
+
 .team-card-item-list-social-icon {
     fill: #f4f4fd;
 }
@@ -397,7 +399,8 @@ nav ul a:visited {
 
 .portfolio-list-item:hover .portfolio-list-item-text {
     transform: translateY(0%);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
 }
 
 .portfolio-list-item-wrapper {
