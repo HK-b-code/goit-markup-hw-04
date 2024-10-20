@@ -186,7 +186,7 @@ nav ul a:visited {
     border: none;
     margin: auto;
     text-align: center;
-    background: #4d5ae5;
+    background-color: #4d5ae5;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -202,7 +202,7 @@ nav ul a:visited {
 
 .main-button:focus,
 .main-button:hover {
-    background: #404bbf;
+    background-color: #404bbf;
 }
 
 /*main-concept*/
