@@ -396,8 +396,8 @@ nav ul a:visited {
 }
 
 .portfolio-list-item:hover {
-    transform: translateY(0%);
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    transform: translateY(0);
 }
 
 .portfolio-list-item-wrapper {
@@ -463,16 +463,12 @@ nav ul a:visited {
     margin-right: 120px;
 }
 
-.footer-content-social {}
-
 .footer-content-list {
     display: flex;
     text-align: center;
     gap: 16px;
     margin-top: 16px;
 }
-
-.footer-content-list-social {}
 
 .footer-content-list-social-link {
     width: 40px;
