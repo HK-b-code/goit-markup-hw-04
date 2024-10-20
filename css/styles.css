@@ -45,6 +45,10 @@ ul {
     padding-bottom: 120px;
 }
 
+.button {
+    cursor: pointer;
+}
+
 /*header*/
 
 .header {
@@ -188,18 +192,17 @@ nav ul a:visited {
     line-height: 24px;
     letter-spacing: 0.04em;
     color: #fff;
-    cursor: pointer;
     border-radius: 4px;
     padding: 16px 32px;
     min-width: 169px;
     height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-button:focus,
 .main-button:hover {
     background: #404bbf;
-    cursor: pointer;
 }
 
 /*main-concept*/
@@ -231,12 +234,16 @@ nav ul a:visited {
 }
 
 .concept-list-item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #8e8f99;
     border-radius: 4px;
     width: 264px;
     height: 112px;
     background: #f4f4fd;
     position: relative;
+    margin-bottom: 8px;
 }
 
 .concept-list-item-icon-img {
@@ -299,7 +306,8 @@ nav ul a:visited {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-card-item:hover .team-card-item-list-social-link {
+.team-card-item:hover .team-card-item-list-social-link,
+.team-card-item:focus .team-card-item-list-social-link {
     background-color: #404bbf;
 }
 
@@ -333,6 +341,7 @@ nav ul a:visited {
     height: 40px;
     gap: 24px;
     margin: 8px 16px 0 16px;
+    justify-content: center;
 }
 
 .team-card-item-list-social-link {
@@ -344,10 +353,12 @@ nav ul a:visited {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-card-item-list-social-link-icon {}
+.team-card-item-list-social-icon {
+    fill: #f4f4fd;
+}
 
 /*main-portfolio*/
 
@@ -378,11 +389,14 @@ nav ul a:visited {
 
 .portfolio-list-item {
     width: calc((100% - 2 * 24px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item:hover .portfolio-list-item-text {
     transform: translateY(0);
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list-item-wrapper {
@@ -403,7 +417,7 @@ nav ul a:visited {
     height: 100%;
     padding: 40px 32px;
     transform: translateY(100%);
-    transition: transform 250ms;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item-border-down {
@@ -441,22 +455,25 @@ nav ul a:visited {
 
 .footer-content {
     display: flex;
+    align-items: baseline;
 }
 
-.footer-content-social {
-    margin-left: 120px;
+.footer-content-logo {
+    margin-right: 120px;
 }
 
-.footer-content-social-list {
+.footer-content-social {}
+
+.footer-content-list {
     display: flex;
     text-align: center;
-    gap: 24px;
+    gap: 16px;
     margin-top: 16px;
 }
 
-.footer-content-social-list-social {}
+.footer-content-list-social {}
 
-.footer-content-social-list-social-link {
+.footer-content-list-social-link {
     width: 40px;
     height: 40px;
     background-color: #4d5ae5;
@@ -465,10 +482,15 @@ nav ul a:visited {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-content-social-list-social-link:hover {
+.footer-content-list-social-icon {
+    fill: #f4f4fd;
+}
+
+.footer-content-list-social-link:hover,
+.footer-content-list-social-link:focus {
     background-color: #31d0aa;
 }
 
@@ -494,10 +516,11 @@ nav ul a:visited {
 }
 
 .footer-text {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #f4f4fd;
+    color: #FFFFFF;
     max-width: 264px;
+    margin-bottom: 16px;
 }
