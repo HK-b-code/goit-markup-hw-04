@@ -49,6 +49,7 @@ ul {
 
 .header {
     border-bottom: 1px solid #e7e9fc;
+    width: 1440px;
     margin: 0 auto;
     padding: 0;
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
@@ -298,7 +299,7 @@ nav ul a:visited {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-card-item.team-card-item-list-social-link:hover {
+.team-card-item:hover .team-card-item-list-social-link {
     background-color: #404bbf;
 }
 
@@ -381,6 +382,7 @@ nav ul a:visited {
 
 .portfolio-list-item:hover .portfolio-list-item-text {
     transform: translateY(0);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list-item-wrapper {
